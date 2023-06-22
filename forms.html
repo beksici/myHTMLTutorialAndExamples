@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="register.php">
+      <div>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="surname">Soyadınız</label>
+        <input type="text" id="surname" />
+      </div>
+      <div>
+        <label for="parola">Parola</label>
+        <input type="password" name="" id="parola" />
+      </div>
+      <div>
+        <p>En sevdiğin prgramramlam dili:</p>
+        <input type="radio" name="programlama" id="html" />
+        <!-- name bilgisi registerphp de buna ulaşmak için kullanacağımız ad aynı zamanda tek seçim için kullanılıyor hepsinin o yüzden adı aynı-->
+        <label for="html">HTML</label>
+
+        <input type="radio" name="programlama" id="css" />
+        <label for="css">Css</label>
+
+        <input type="radio" name="programlama" id="javascript" />
+        <label for="javascript">Javascript</label>
+      </div>
+      <!-- id ve forları birbirine eşitlemek gerkiyor ki labelin üzerine geldiğimiz zaman da seçim yapabilelim -->
+      <div>
+        <p>En sevdiğin prgramramlam dili:</p>
+        <input type="checkbox" id="html2" />
+        <label for="html2">HTML</label>
+
+        <input type="checkbox" id="css2" />
+        <label for="css2">Css</label>
+
+        <input type="checkbox" id="javascript2" />
+        <label for="javascript2">Javascript</label>
+      </div>
+
+      <div>
+        <label for="intro">Kendini Anlat</label>
+        <textarea name="" id="intro" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="cities">Şehir</label>
+        <select id="cities">
+          <option value="41">Kocaeli</option>
+          <!-- kullanıcı 41 seçtiği zaman biz kocaelini seçmiş oluyoruz-->
+          <option value="34">İstanbul</option>
+        </select>
+      </div>
+      <div>
+        <label for="eposta">Email</label>
+        <input type="email" name="" id="eposta" />
+      </div>
+      <div>
+        <label for="birthday"> Birthday</label>
+        <input type="date" name="" id="Birthday" />
+      </div>
+      <div>
+        <button type="reset">Resetle</button>
+        <button type="submit">Kaydet</button>
+      </div>
+    </form>
+  </body>
+</html>
